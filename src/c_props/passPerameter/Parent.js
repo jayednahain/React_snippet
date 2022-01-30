@@ -1,10 +1,10 @@
 
 import React from 'react';
 import { Component } from 'react';
-import ChildComponent from './ChildComponent';
+import ChildSender from './child';
 
 
-class ParentComponent extends Component {
+class ParentReciver extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -14,9 +14,9 @@ class ParentComponent extends Component {
         this.GreetParent= this.GreetParent.bind(this)
 
     }
-    GreetParent()
+    GreetParent(passing_data)
     {
-        alert(`hellow from ${this.state.parentName}`)
+        alert(`hellow from ${this.state.parentName} From ${passing_data}`)
     }
     
     render() { 
@@ -25,11 +25,11 @@ class ParentComponent extends Component {
                 <h1>Parent componet area! </h1>
                 {/* pass the method through component props ! */}
                 {/* handeler is props of Child component */}
-                <ChildComponent handeler = {this.GreetParent}/>
+                <ChildSender handeler = {this.GreetParent}/>
                 
             </div>
          );
     }
 }
  
-export default ParentComponent;
+export default ParentReciver;

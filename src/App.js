@@ -19,6 +19,8 @@ import BindingInRender from './EventHandleWithBind/BindInRender';
 import UsingArrowWithoutBinding from './EventHandleWithBind/ArrowFunction';
 import BindingOnConstructor from './EventHandleWithBind/BindInConstructor';
 import DefineArrowHandleFUnction from './EventHandleWithBind/HandleFUnctionAsArrowFunction';
+import ParentComponent from './c_props/propsASmethod/parentComponent';
+import ParentReciver from './c_props/passPerameter/Parent';
 // sumit
 import Clock from "./class_components/S_Clock";
 import Fun_clock from "./function_components/S_fun_clock";
@@ -94,9 +96,16 @@ function App() {
             </div>
             {/* running ! */}
             <div className='container border p-3'>
+              <h1>Passing  props </h1>
+              <h2>parent child component realtion</h2>
               <div className='row'>
                 <div className='col'>
-                  
+                  <h3>Passing method as props</h3>
+                 <ParentComponent/>
+                </div>
+                <div className='col'>
+                  <h3>Pass parameter wtih click handle</h3>
+                  <ParentReciver/>
                 </div>
               </div>
             </div>
