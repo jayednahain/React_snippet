@@ -15,12 +15,17 @@ import Counter from './state/Counter';
 import Counter5time from './state/Count5Times';
 import DestructeProps from './CDestructuringPropsAndState/FCOmponent';
 import DestructeClassProps from './CDestructuringPropsAndState/ClassComponent';
+//14
 import BindingInRender from './EventHandleWithBind/BindInRender';
 import UsingArrowWithoutBinding from './EventHandleWithBind/ArrowFunction';
 import BindingOnConstructor from './EventHandleWithBind/BindInConstructor';
 import DefineArrowHandleFUnction from './EventHandleWithBind/HandleFUnctionAsArrowFunction';
+//15
 import ParentComponent from './c_props/propsASmethod/parentComponent';
 import ParentReciver from './c_props/passPerameter/Parent';
+//16
+import IfelseConditions from './conditinalRendering/UsingIfElse/condiftions';
+import RetrunAsVariable from './conditinalRendering/ElementsVariable/RetrunVariableAsCondition';
 // sumit
 import Clock from "./class_components/S_Clock";
 import Fun_clock from "./function_components/S_fun_clock";
@@ -94,7 +99,7 @@ function App() {
                 </div>
               </div>
             </div>
-            {/* running ! */}
+            
             <div className='container border p-3'>
               <h1>Passing  props </h1>
               <h2>parent child component realtion</h2>
@@ -106,6 +111,18 @@ function App() {
                 <div className='col'>
                   <h3>Pass parameter wtih click handle</h3>
                   <ParentReciver/>
+                </div>
+              </div>
+            </div>
+            {/* running ! */}
+            <div className='container p-1 border'>
+              <h1 className='text-center'>Conditional rendering</h1>
+              <div className='row'>
+                <div className='col'>
+                  <IfelseConditions/>
+                </div>
+                <div className='col'>
+
                 </div>
               </div>
             </div>
