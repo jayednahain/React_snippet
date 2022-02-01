@@ -13,9 +13,8 @@ class RetrunAsVariable extends Component {
      }
     render() { 
         let message
-        
             if (this.state.isLoggedIn) { 
-                    message =  <UserComponents/>   
+                    message = <UserComponents username="jayed nahain"/>   
             }
             else
             {          

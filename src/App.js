@@ -26,6 +26,13 @@ import ParentReciver from './c_props/passPerameter/Parent';
 //16
 import IfelseConditions from './conditinalRendering/UsingIfElse/condiftions';
 import RetrunAsVariable from './conditinalRendering/ElementsVariable/RetrunVariableAsCondition';
+import ternaryOperator from './conditinalRendering/ternaryOperator/ternaryOperatorCondiftion';
+import ShortCondition from './conditinalRendering/shortCircuit/ShortConditionApproach';
+//17 render list
+import RenderList from './ListRender/listRender';
+import ObjectInsideListRender from './ListRender/ObjectInsideListRender';
+import PersonDataComponent from './ListRender/DevideComponent/personData';
+
 // sumit
 import Clock from "./class_components/S_Clock";
 import Fun_clock from "./function_components/S_fun_clock";
@@ -55,7 +62,7 @@ function App() {
               <button className='btn btn-dark'>Niloys buttton</button>
             </PropsDemo>
             <div className='container border'>
-              <h2 className='text-center'>state example</h2>
+              <h2 className='rounded text-center border btn-dark p-2'>state example</h2>
               <ChnageStateButton/>
               <div className='container border'>
                   <div className='row'>
@@ -83,7 +90,7 @@ function App() {
             </div>
             
             <div className='container shadow-sm'>
-              <h1 className='text-center'>Bindings</h1>
+              <h1 className='text-center border btn-dark p-2'>Bindings</h1>
               <div className='row'>
                 <div className='col border'>
                   <BindingInRender/>
@@ -101,7 +108,7 @@ function App() {
             </div>
             
             <div className='container border p-3'>
-              <h1>Passing  props </h1>
+              <h1 className='text-center border btn-dark p-2'>Passing  props </h1>
               <h2>parent child component realtion</h2>
               <div className='row'>
                 <div className='col'>
@@ -114,15 +121,45 @@ function App() {
                 </div>
               </div>
             </div>
-            {/* running ! */}
+            
             <div className='container p-1 border'>
-              <h1 className='text-center'>Conditional rendering</h1>
+              <h3 className='text-center border btn-dark p-2'>Conditional rendering</h3>
               <div className='row'>
                 <div className='col'>
+                  <p className='bg-info'>Direct condition</p>
                   <IfelseConditions/>
                 </div>
                 <div className='col'>
+                  <p className='bg-info'>set on variable and retrun</p>
+                  <RetrunAsVariable/>
+                </div>
+                <div className='col'>
+                  <p className='bg-info'>Using ternary Operator</p>
+                  <ternaryOperator/>
+                </div>
+                <div className='col'>
+                  <p className='bg-info'>Short condition</p>
+                  <ShortCondition/>
+                </div>
+              </div>
+            </div>
 
+            <div>
+              <div className='container m-1 border'>
+                <h3 className='text-center border btn-dark p-2'>Rendering List </h3>
+                <div className='row'>
+                  <div className='col'>
+                    <p>render list using map</p>
+                    <RenderList/>
+                  </div>
+                  <div className='col'>
+                    <h3>object inside list</h3>
+                    <ObjectInsideListRender/>
+                  </div>
+                  <div className='col'>
+                    <h3>Devide component</h3>
+                    <PersonDataComponent/>
+                  </div>
                 </div>
               </div>
             </div>
