@@ -32,6 +32,11 @@ import ShortCondition from './conditinalRendering/shortCircuit/ShortConditionApp
 import RenderList from './ListRender/listRender';
 import ObjectInsideListRender from './ListRender/ObjectInsideListRender';
 import PersonDataComponent from './ListRender/DevideComponent/personData';
+//19 index as key
+import NameAskey from './ListIndexAskey/UseNameAskey';
+import IndexAsKey from './ListIndexAskey/UseIndexAsKey';
+//21 form handle
+import FormTest from './FormHandle/FormTest';
 
 // sumit
 import Clock from "./class_components/S_Clock";
@@ -148,20 +153,39 @@ function App() {
               <div className='container m-1 border'>
                 <h3 className='text-center border btn-dark p-2'>Rendering List </h3>
                 <div className='row'>
-                  <div className='col'>
+                  <div className='col p-3 border rounded shadow p-3'>
                     <p>render list using map</p>
                     <RenderList/>
                   </div>
-                  <div className='col'>
+                  <div className='col p-3 border rounded shadow p-3'>
                     <h3>object inside list</h3>
                     <ObjectInsideListRender/>
                   </div>
-                  <div className='col'>
+                  <div className='col p-3 border rounded shadow p-3'>
                     <h3>Devide component</h3>
                     <PersonDataComponent/>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className='container p-1'>
+              <h3 className='text-center border btn-dark p-2 shadow-sm'>Index as key</h3>
+              <div className='row broder p-2'>
+                <div className='col p-3 border rounded shadow p-3'>
+                  <p>Using name as key</p>
+                  <NameAskey/>
+                </div>
+                <div className='col p-3 border rounded shadow p-3'>
+                  <p>Use index as key</p>
+                  <IndexAsKey/>
+                </div>
+              </div>
+            </div>
+
+            <div className='container'>
+              <h3 className='text-center border btn-dark p-2 shadow-sm'>Form Test</h3>
+              <FormTest/>
             </div>
           </div>
 

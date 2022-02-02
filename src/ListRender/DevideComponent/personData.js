@@ -5,6 +5,7 @@ import ShowPersonData from "./personShow";
 
 function PersonDataComponent() {
 
+    const names = ["nahian","jayed","abuJayed"]
     const PersonData = [
         {
             id:1,
@@ -37,11 +38,14 @@ function PersonDataComponent() {
             skil:"Sql"
         }
     ]
+
     // sending person as props
     //sending data to ShowPersonData person data component !
-    const PersonList = PersonData.map(person=> <ShowPersonData person={person}/>)
+    // const PersonList = PersonData.map(person=> <ShowPersonData person={person}/>)
+    const nameList = names.map(name=> <h4>{name}</h4>)
+
     // so the person will also caries the component
-    return <div>{PersonList}</div>
+    return <div>{nameList}</div>
      
 }
 
